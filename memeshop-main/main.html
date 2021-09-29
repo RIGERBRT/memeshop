@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
 <style>
    p {
     color: white;
@@ -29,11 +30,11 @@ body {margin:0;}
 
 .navbar a:hover {
   background: #f1f1f1;
-  color: black;
+  color: rgb(37, 37, 37);
 }
 
 .navbar a.active {
-  background-color: #4CAF50;
+  background-color: #d4d4d4;
   color: white;
 }
 
@@ -42,13 +43,72 @@ body {margin:0;}
   margin-bottom: 30px;
 }
 </style>
+   <style>
+     .mainmenubtn {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: white;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+     </style>
+   <script>
+    // memeshop.js
+  </script>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <title>MemeShop</title>
+<link rel="stylesheet" href="css/MAIN.css" type="text/css" />
+<link rel="stylesheet" href="css/my-menu.css" type="text/css" />
 
+
+
+
+  <div class="dropdown">
+  <button class="mainmenubtn">меню</button>
+ 
+<nav class="menu_color">
+ <nav class="dropdown-child">
+  
+  <ul class="my_menu">
+      <li><a href="#/">Начальная страница</a></li>
+      <li class="parent"><a href="#/">Одежда</a>
+          <ul class="sub-menu">
+              <li><a href="#/">Трусы</a></li>
+              <li><a href="#/">Футболки</a></li>
+              <li><a href="#/">Куртка</a></li>
+              <li><a href="#/">Тапочки</a></li>
+          </ul>
+      </li>
+      <li><a href="#/">Машины</a></li>
+      <li><a href="#/">Еда</a></li>
+      <li><a href="#/">Животные</a></li>
+  </ul>
+  </nav>
+</nav>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	<div class="container-fluid">
@@ -62,64 +122,9 @@ body {margin:0;}
       </ul>
     </div>
   </div>
-   <footer class="rightpic">
-
-    <header class="header" animation-type="1">
-  
+      <footer class="rightpic">
+      <header class="header" animation-type="1">
       <div class="header-first"><div class="header-leftStrip">
-    
-      </div>
-      <a class="header-logo" href="/">
-        <div class="header-logo-inside">
-          <div class="logo header-logo-logo">
-            <div class="logo-content">
-              <div class="logo-left"><svg class="logo-memeshop" width="113" height="72" viewBox="0 0 113 72">
-              </svg><div class="logo-memeshop">
-                <svg width="225" height="72" viewBox="0 0 225 72">
-                </svg></div>
-                <div class="logo-dot">
-                  <svg width="225" height="72" viewBox="0 0 225 72">
-                  </svg></div></div><div class="logo-right">
-                    <div class="logo-bell"><svg width="225" height="72" viewBox="0 0 225 72">
-                   </svg></div></div>
-                   <div class="logo-strip-top"></div>
-                   <div class="logo-strip-bottom"></div></div></div></div></a>
-                   <div class="header-rightStrip"></div></div>
-                   <div class="header-second">
-
-                        <div class="header-second-other"><div class="header-second-mobile-filter">
-                        <div class="select language-switcher hoverable"><div class="select-input">
-                        <div class="select-input-content">РУС</div></div><div class="select-list-transition"></div></div>
-                        <div class="select currency-switcher hoverable"><div class="select-input">
-                        <div class="select-input-content">RUB</div></div><div class="select-list-transition"></div></div></div>
-                        <div class="header-account"><div class="icon header-account-icon icon__animated">
-                         <svg class="account" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 0C6.82 0 3.82 3 3.82 6.68c0 2.29 1.16 4.31 2.92 5.52A9.534 9.534 0 00.95 21h1.91c0-4.26 3.37-7.64 7.64-7.64s7.64 3.37 7.64 7.64h1.91c0-3.95-2.37-7.35-5.79-8.8a6.68 6.68 0 002.92-5.52C17.18 3 14.18 0 10.5 0zm0 1.91c2.65 0 4.77 2.13 4.77 4.77s-2.13 4.77-4.77 4.77-4.77-2.12-4.77-4.77 2.12-4.77 4.77-4.77z"></path>
-                         </svg></div></div><div class="header-cart"><div class="icon header-cart-icon icon__animated"><svg class="cart" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M6.02 7L4.27 0H.11v1.75h2.84l3.5 14h11.81L20.89 7H6.02zm10.93 7H7.77L6.45 8.75h12.03L16.95 14zM9.3 16.63c1.21 0 2.19.98 2.19 2.19S10.5 21 9.3 21s-2.19-.98-2.19-2.19.98-2.18 2.19-2.18zm3.93 2.18a2.19 2.19 0 104.379.001 2.19 2.19 0 00-4.379-.001z"></path></svg>
-                       </div><div class="header-cart-total-cost">0&nbsp;RUB</div></div></div><div class="header-mobile-menu"><div class="icon header-mobile-menu-icon icon__animated"><svg class="menu" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M36,2H0V0h36V2z M36,18H0v2h36V18z M36,9H0v2h36V9z"></path></svg></div><div class="header-mobile-menu-blackout"></div>
-                       <div name="header-mobile-menu-side-transition"><div class="header-mobile-menu-side header-mobile-menu-hidden">
-                       <div class="header-mobile-menu-hide">скрыть</div><div class="icon header-mobile-menu-cross icon__animated">
-                       <svg class="cross" xmlns="http://www.w3.org/2000/svg"><polygon points="15,0.54 14.46,0 7.5,6.96 0.54,0 0,0.54 6.96,7.5 0,14.46 0.54,15 7.5,8.04 14.46,15 15,14.46 8.04,7.5"></polygon></svg></div>
-                       <ul class="header-mobile-menu-list"><li class="header-mobile-menu-item mobile-selectors"><span><div class="select language-switcher hoverable">
-                       <div class="select-input"><div class="select-input-content">РУС</div></div><div class="select-list-transition"></div></div>
-                       <div class="select currency-switcher hoverable"><div class="select-input"><div class="select-input-content">RUB</div></div>
-                       <div class="select-list-transition"></div></div></span></li><li class="header-mobile-menu-item hoverable">
-                       <a href="/category/t-shirts">машини</a></li><li class="header-mobile-menu-item hoverable">
-                       <a href="/category/sweatshirts">красовки</a></li><li class="header-mobile-menu-item hoverable">
-                       <a href="/category/hoodies">плакати</a></li><li class="header-mobile-menu-item hoverable"><a href="/category/pants-shorts">Штаны/шорты</a></li>
-                        <li class="header-mobile-menu-item hoverable"><a href="/category/polo">телефон</a></li><li class="header-mobile-menu-item hoverable">
-                       <a href="/category/shirts">Рубашки</a></li><li class="header-mobile-menu-item hoverable"><a href="/category/caps">Кепки</a></li>
-                       <li class="header-mobile-menu-item hoverable"><a href="/category/hats">Шапки</a></li><li class="header-mobile-menu-item hoverable"><a href="/category/underpants">Трусы</a></li>
-                       <li class="header-mobile-menu-item hoverable"><a href="/category/bags"></a></li><li class="header-mobile-menu-item hoverable"><a href="/category/souvenirs">Сувениры</a></li>
-                       <li class="header-mobile-menu-item hoverable"><a href="/category/memes">Мемы</a></li><li class="header-mobile-menu-item hoverable"><a href="/faq">FAQ</a></li><li class="header-mobile-menu-item hoverable">
-                    <span>Статус заказа</span></li></ul></div></div></div></div></header>
-                      
-
-    
-
-        
-
       </div>
    </footer>
 </nav>
