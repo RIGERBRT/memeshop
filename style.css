@@ -226,6 +226,12 @@ ul li a {color: rgb(255, 255, 255);}
 
 
 
+  .selector-for-some-widget {
+	box-sizing: content-box;
+  }
+
+
+
 
 
 
